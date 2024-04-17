@@ -58,6 +58,7 @@ let Btn = document.querySelector(".btnbook");
 let icon = document.getElementById('closeicon');
 let youtubeicon=document.querySelector('#link i');
 let Youtube=  document.getElementById('youtube');
+let navLinks=document.querySelector(".navbar-nav")
 
 toggle.addEventListener('click', function() {
 
@@ -71,14 +72,8 @@ toggle.addEventListener('click', function() {
     icon.classList.toggle('darkicon'); 
     youtubeicon.classList.toggle('darkicon');
     Youtube.classList.toggle('videolink');
-
-    const links = document.querySelectorAll('.topbar .navbar-nav a');
-    links.forEach(link => {
-        //link.addEventListener('click', function() {
-            link.classList.toggle('active');
-        //});
-    });
-
+    navLinks.classList.toggle('light');
+    
 }); 
 
     
