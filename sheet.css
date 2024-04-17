@@ -1,0 +1,417 @@
+body p {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+body h1{
+    font-family: Amatic SC, sans-serif;
+    font-size: 350%; 
+    font-weight: bold;
+    padding: 10%;
+}
+body h3 {
+    font-family: Amatic SC, sans-serif;
+    text-align: center;
+    margin: 15px 5px 30px 5px;
+    font-size: 300%; 
+}
+body h3 span {
+    color: rgb(208, 40, 40);
+}
+body h2 span {
+    color: red;
+    font-size: 20px;
+}
+.topbar h2 {
+    margin-right: 250px;
+    padding: 10px;
+}
+.topbar a , #drop a {
+    color: #7f7f90;
+    font-size:16px;
+    transition: transform 0.3s linear;
+}
+.topbar a:hover , #drop a:hover {
+    color: black;
+}
+.home{
+    display: flex; flex-direction: row; justify-content: space-between;
+    background-color: #eee;
+}
+.elements{
+   display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    margin: 20px 20px 20px 40px;
+}
+.elements p {
+    padding-left: 50px;
+}
+.btnbook{
+    color: black; 
+    background-color:rgb(210, 26, 26);
+    width: 150px; height: 50px; 
+    padding: 10px;
+     border: none; border-radius: 50px;
+     margin-right: 17px;
+}
+.video a , .video a:hover{
+    color:rgb(210, 26, 26);
+    font-size:17px;
+}
+#movingImg{
+    margin: 30px;
+}
+.video {
+    display: flex;
+}
+#link {
+    margin-left: 20px;
+}
+#link i {
+    font-size: 40px;
+    margin: 0px 10px 0px 10px;
+}
+@media (max-width: 576px){
+    .home{
+         flex-direction: column-reverse; 
+    }
+    .box img {
+        width: 280px;
+        margin:10px 0px 5px 20px;
+    }
+    body h1{
+        font-size: 230%; 
+        padding: 0px;
+    }
+    .home p {
+        padding: 10px;
+    }
+    .video {
+        display: block;
+        margin-right: 100px;
+    }
+   #link {
+    margin: 20px 0px 10px 0px;
+   }
+   .topbar h2 {
+    margin-right: 0px;
+}
+   
+}
+#chefs {
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 55px;
+}
+#chefs .card {
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;   
+}
+#chefs .card:hover {
+    transform: scale(1.1);
+}
+#chefs .card p {
+    color: #7f7f90; 
+    padding: 10px;
+}
+#cards {
+    position: relative;
+    display: inline-block;
+}
+.overicons {
+    display: flex; flex-direction: column;
+    position: absolute;
+     padding: 10px;
+      top: 0; right: 0;
+     background-color: rgba(0, 0, 0, 0.5); 
+     text-align: center;
+     opacity: 0; 
+     color: #eee;
+     font-size: 25px;
+    transition: opacity 0.5s ease;  
+    margin: 7px;
+
+}
+.overicons i:hover{
+    color: red;
+}
+#cards:hover .overicons{
+    opacity: 1; 
+}
+#gallery{
+    display: flex; flex-direction: row;
+    align-items: center; justify-content: space-around;
+    background-color: #dfdede;
+}
+#gallery .gallery{
+    display: flex; flex-direction: column;
+}
+#gallery img {
+    width: 300px; 
+    margin: 20px;
+    border: 5px white solid;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.overlay {
+    position: absolute;
+     width: 250px; height: 100px;
+     padding: 10px;
+      top: 0;left: 0;
+     background-color: rgba(0, 0, 0, 0.5); 
+     color: white;
+     font-size: 30px;
+     text-align: center;
+     opacity: 0; 
+    transition: opacity 0.3s ease; 
+    margin: 70px 0 0 50px; 
+}
+.image-container:hover .overlay {
+    opacity: 1; 
+}
+@media (max-width: 576px){
+    body h3 {
+        margin: 15px 5px 30px 5px;
+        font-size: 250%; 
+    }
+    #chefs {
+        margin-bottom: 40px;
+    }
+    .card{
+       margin: 15px 0px 10px 10px ;
+    }
+    #gallery{
+        flex-direction: column;
+        align-items: center; justify-content: space-around;
+        margin: 0px;
+    }
+    #gallery img {
+        width: 280px; 
+        margin: 10px 20px 10px 0px;
+        border: 5px white solid;
+    }
+    .overlay {
+         width: 230px; height: 100px;
+         padding: 10px;
+          top: 0;left: 0;
+         background-color: rgba(0, 0, 0, 0.5); 
+         color: white;
+         font-size: 25px;
+         text-align: center;
+         opacity: 0; 
+        transition: opacity 0.3s ease; 
+        margin: 60px 20px 0 40px; 
+    }
+    #closeicon{
+        margin-right: 10px;
+    }
+}
+#map iframe{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+#info{
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: space-between; 
+}
+#info i {
+    font-size: 40px;
+    color:red;
+    margin: 15px 15px 0px 20px;
+
+}
+#info .mainbox{
+    width: 45%; height: 80px;
+    background-color:#eee;
+    margin: 10px;
+}
+.mainbox{
+    display: flex; flex-direction: row;
+}
+.mainbox div {
+    margin: 10px 3px 3px 15px;
+}
+#info div h5 {
+    color:#7f7f90;
+    font-size: 23px;
+}
+#inputs  {
+    display: flex;  flex-direction: row;  flex-wrap: wrap;
+    justify-content: space-between;
+}
+#inputs input {
+    width: 45%; height: 60px;
+    margin: 10px 0px 10px 10px;
+    padding: 10px;
+}
+#inputs .btn {
+    display: inline;
+    margin-right: 27%; margin-top: 20px;
+    width: 200px; height: 50px;
+}
+#footer {
+    background-image: url('https://alfaroukroute.github.io/Mealify/assets/img/textured-metal-background.jpg');
+    color: #eee;
+    display: flex; flex-direction: row; justify-content: space-between;
+}
+.header {
+    display: flex; flex-direction: row;
+    padding: 15px;
+}
+#footer h2 {
+ margin-top: 20px; margin-left: 20px;
+}
+#footer p {
+padding: 5px;
+font-size: 15px;
+}
+.media h4 {
+    text-align: center;
+    border-bottom: 2px grey solid;
+    width: 200px;
+}
+.media i {
+    font-size: 30px;
+    margin: 13px;
+    align-items: center;
+}
+.media i:hover {
+    color: rgb(205, 56, 56);
+}
+.section1 {
+    margin: 5px 10px 10px 50px;
+}
+.section2 {
+    margin: 40px 140px 0px 0px;
+}
+.section2 input {
+    width: 350px; height: 55px;
+    margin: 20px 20px 20px 7px;
+    padding: 20px;
+}
+.section2 .btn {
+    width: 150px;
+    padding: 10px;
+     margin-bottom: 3px;
+}
+.user {
+    margin: 10px;
+}
+#darklightmode i {
+    font-size: 40px;
+    margin: 3px 10px 0px 10px;
+}
+@media (max-width: 576px) {
+    #map iframe{
+        width: 310px;
+        height: 290px;
+        margin-bottom:  0px 0px 30px 0px;
+    }
+    .mainbox{
+        display: block;
+        width: fit-content; 
+        background-color:#eee;
+        margin: 10px;
+        padding-right: 300px;
+    }
+    .mainbox{
+        display: flex; flex-direction: row;
+    }
+    .mainbox div {
+        margin: 0px;
+    }
+    #info div h5 {
+        color:#7f7f90;;
+        font-size: 20px;
+        padding: 10px 0px 0px 15px;
+    }
+    #info div p{
+        padding: 2px 0px 2px 10px;
+    }  
+    #info i {
+        font-size: 30px;
+        margin: 25px 10px 0px 10px;
+    
+    }
+    #inputs  {
+        display: flex;  flex-direction: column;  flex-wrap:nowrap;
+    }
+    #inputs input {
+        width: 280px; height: 50px;
+        margin: 10px 0px 10px 10px;
+        padding: 10px;
+    }
+    #inputs .btn {
+        display: inline;
+        margin: 0px; 
+        margin: 10px 0px 20px 10px;
+        width: 180px; height: 40px;
+    }
+    #footer {
+        display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .header {
+        padding: 0px;
+    }
+    #footer h2 {
+   margin: 0px;
+    }
+    #footer p {
+    padding-top: 10px;
+    font-size: 15px;
+    }
+    .section1 {
+        margin: 20px 5px 10px 20px;
+    }
+    .section2 {
+        margin:20px;
+    }
+    .Subscribe {
+        display: flex;
+        flex-direction: row;
+    }
+    .section2 input {
+        width: 200px; height: 45px;
+        margin: 20px 5px 20px 7px;
+        padding: 20px;
+    }
+    .section2 .btn {
+        width: 90px; height: max-content;
+        padding: 10px;
+        margin:20px 10px 0px 0px;
+    }    
+    .header #logo {
+        margin-top: 15px; margin-left: 10px;
+    }
+    .header img {
+        width: 60px;
+    }
+    #darklightmode i {
+        margin:0px;
+    }
+    #youtube {
+        margin-bottom: 7px;
+    }
+}
+
+.background{
+    background-color:#37373f;
+}
+.navBar{
+    background-color: black;
+}
+.whitecolor , .active{
+    color:white;
+}
+.darkbtn {
+    background-color: #FFC300;
+}
+.darkicon{
+    color:white;
+}
+.videolink{
+    color: #FFC300;
+}
